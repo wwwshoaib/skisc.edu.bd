@@ -7,7 +7,7 @@ import Video from "../components/Video";
 import Footer from "../components/Footer";
 import 'animate.css';
 import Navbar from "../components/Navbar/Navbar";
-import LatestNews from "../components/LatestNews/LatestNews";
+
 
 
 
@@ -17,8 +17,6 @@ const HomeLayout = () => {
     return (
         <div className="bg-green-50">
             <Header></Header>
-            <LatestNews></LatestNews>
-            
             <Navbar></Navbar>
            
             <div className="py-5 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-12 bg-green-50">

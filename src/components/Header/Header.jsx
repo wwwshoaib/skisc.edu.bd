@@ -1,4 +1,5 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import LatestNews from '../LatestNews/LatestNews';
 
 const Header = () => {
   return (
@@ -77,6 +78,7 @@ const Header = () => {
           </a>
         </div>
       </div>
+      <LatestNews></LatestNews>
     </header>
   );
 };
