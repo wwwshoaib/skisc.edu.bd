@@ -5,8 +5,6 @@ import AuthLayout from "../layouts/AuthLayout";
 import DonationCampaign from "../pages/DonationCampaign";
 import HowToHelp from "../pages/HowToHelp";
 import Dashboard from "../pages/Dashboard";
-import MoreNews from "../components/MoreNews";
-import MoreVideos from "../components/MoreVideos";
 import Campaigns from "../components/Campaigns";
 import Details from "../pages/Details";
 import Login from "../pages/Login";
@@ -90,16 +88,9 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
   },
-  {
-    path: "/news",
-    element: <MoreNews></MoreNews>
-  },
+  
 
-  {
-    path: "/videos",
-    element: <MoreVideos></MoreVideos>
-  },
-
+  
 
 
 

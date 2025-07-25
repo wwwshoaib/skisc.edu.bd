@@ -1,5 +1,5 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
-import LatestNews from '../LatestNews/LatestNews';
+import Notice from '../Notice/Notice';
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
         <div className="w-full sm:w-auto flex flex-col items-center sm:items-start">
           <div className="bg-white p-1 rounded-full shadow-md border border-blue-300">
             <img
-              src="/logo-skisc.jpg"
+              src="/skisc-logo.jpg"
               alt="School Logo"
               className="h-14 w-14 sm:h-16 sm:w-16 object-cover rounded-full"
             />
@@ -39,7 +39,7 @@ const Header = () => {
             Edexcel Intl. Center: <span className="font-semibold text-blue-800">93189</span>
           </p>
           <div className="mt-2 flex gap-3 items-center text-blue-600 text-xl">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800">
+            <a href="https://www.facebook.com/skiscedu" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800">
               <FaFacebookF />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600">
@@ -63,7 +63,7 @@ const Header = () => {
           Edexcel Intl. Center: <span className="font-semibold text-blue-800">93189</span>
         </p>
         <div className="flex justify-center gap-6 text-blue-600 text-xl">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800">
+          <a href="https://www.facebook.com/skiscedu" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800">
             <FaFacebookF />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600">
@@ -78,7 +78,11 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <LatestNews></LatestNews>
+      {/* Notice */}
+      <div className='bg-slate-100 '>
+        <Notice></Notice>
+      </div>
+    
     </header>
   );
 };

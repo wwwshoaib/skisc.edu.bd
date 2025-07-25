@@ -4,19 +4,20 @@ import { motion, AnimatePresence } from "framer-motion";
 const slides = [
   {
     id: 1,
-    image: "https://i.postimg.cc/SxfSh3Hk/Whats-App-Image-2023-02-15-at-6-36-06-PM.jpg",
+    image: "https://i.postimg.cc/gkf68tkQ/skisc-campus.jpg",
     text: "SKISC Campus!"
   },
   {
     id: 2,
     image: "https://i.postimg.cc/SxfSh3Hk/Whats-App-Image-2023-02-15-at-6-36-06-PM.jpg",
-    text: "SKISC Campus!"
+    text: "SKISC Students"
   },
   {
     id: 3,
-    image: "https://i.postimg.cc/SxfSh3Hk/Whats-App-Image-2023-02-15-at-6-36-06-PM.jpg",
-    text: "SKISC Campus!"
-  }
+    image: "https://i.postimg.cc/vZs2Xz02/1432.jpg",
+    text: "Celebrating Bangla New Year-1432"
+  },
+  
 ];
 
 

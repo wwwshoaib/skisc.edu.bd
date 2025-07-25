@@ -5,6 +5,7 @@ import {
   HiChevronDown,
   HiHome,
 } from "react-icons/hi";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -26,41 +27,35 @@ const Navbar = () => {
     {
       label: "Teachers",
       items: [
-        { name: "", href: "#web-design" },
         { name: "College Section", href: "#college-section" },
         { name: "School Section", href: "#school-section" },
         { name: "primary Section", href: "#primary-section" },
       ],
     },
-    {
-      label: "Contact",
-      items: [
-        { name: "Email", href: "#email" },
-        { name: "Phone", href: "#phone" },
-        { name: "Location", href: "#location" },
-      ],
-    },
+   
+   
   ];
 
   return (
-    <nav className="w-full bg-purple-300 shadow z-50">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <nav className=" bg-purple-300 shadow z-50">
+      <div className="w-full mx-auto px-4 py-3 flex items-center justify-between">
         {/* Desktop Menu */}
         <ul className="hidden md:flex justify-center items-center space-x-10 w-full font-medium text-gray-800 text-lg">
           <li className="hover:text-pink-600 transition flex items-center gap-1 cursor-pointer">
-            <a href="#home" className="flex items-center gap-1">
+            <Link to = "/" className="flex items-center gap-1" >
               <HiHome size={20} /> Home
-            </a>
+            </Link>
+           
           </li>
 
           {navItems.map(({ label, items }) => (
             <li key={label} className="relative group cursor-pointer">
               <div className="flex items-center gap-1 hover:text-pink-600 transition">
-                {label} <HiChevronDown />
+                {label} <HiChevronDown /> 
               </div>
               <ul className="absolute left-1/2 -translate-x-1/2 mt-2 w-44 bg-white shadow-xl rounded-md opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all origin-top z-50">
                 {items.map(({ name, href }) => (
-                  <li key={name} className="px-5 py-2 hover:bg-pink-100 text-sm">
+                  <li key={name} className="px-5 py-2 hover:bg-green-500 text-sm">
                     <a href={href} className="block w-full">
                       {name}
                     </a>
@@ -68,11 +63,27 @@ const Navbar = () => {
                 ))}
               </ul>
             </li>
+            
           ))}
+          {/* stuff */}
+           <li className="hover:text-pink-600 transition">
+            <a href="#">Stuff</a>
+          </li>
+          {/* contact */}
+          <li className="hover:text-pink-600 transition">
+            <a href="#">Contact</a>
+          </li>
         </ul>
 
         {/* Mobile Toggle Center */}
-        <div className="md:hidden w-full flex justify-center">
+        <div className="md:hidden w-full flex justify-between">
+          <button
+            className="text-gray-800"
+            onClick={() => setNavOpen(true)}
+          >
+            {/* Menu */}
+           <span className="text-md font-bold hover:text-white hover:bg-violet-600 p-2 rounded-sm ">Menu</span>
+          </button>
           <button
             className="text-gray-800"
             onClick={() => setNavOpen(true)}
@@ -130,6 +141,12 @@ const Navbar = () => {
               )}
             </li>
           ))}
+          <li className="hover:text-pink-600 transition">
+            <a href="#">Stuff</a>
+          </li>
+          <li className="hover:text-pink-600 transition">
+            <a href="#">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
