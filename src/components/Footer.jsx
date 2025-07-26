@@ -3,7 +3,7 @@ import { HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker } from 'react-ic
 
 const Footer = () => {
   return (
-    <footer className=" bg-gray-800 text-white">
+    <footer className=" bg-gray-700 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
 
@@ -56,7 +56,7 @@ const Footer = () => {
             { title: 'Quick Links', links: ['Dhaka Education Board', 'Sylhet Education Board', 'DSHE (মাউশি)', 'EMIS', 'Ministry of Education', 'Ministry of Primary and Mass Education'], hrefs: ['https://www.dhakaeducationboard.gov.bd/site/', 'https://sylhetboard.gov.bd/', 'https://dshe.gov.bd/', 'https://www.emis.gov.bd/emis', 'https://moedu.portal.gov.bd/', 'https://mopme.gov.bd/'] },
             { title: 'Quick Links', links: ['জাতীয় তথ্য বাতায়ন', ' শিক্ষক বাতায়ন', 'মুক্তপাঠ', 'Directorate of Primary Education (DPE)', 'BANBEIS', 'NCTB'], hrefs: ['https://bangladesh.gov.bd/', 'https://www.teachers.gov.bd/', 'https://muktopaath.gov.bd/', 'https://www.dpe.gov.bd/', 'https://banbeis.gov.bd/', 'https://nctb.gov.bd/'] },
             { title: 'Quick Links', links: ['Pearson Edexcel', 'Pearson Edexcel Exam Timetables', 'British Council Bangladesh', 'Paper Lords', 'BITESIZE'], hrefs: ['https://qualifications.pearson.com/en/home.html', 'https://qualifications.pearson.com/en/support/support-topics/exams/exam-timetables.html', 'https://www.britishcouncil.org.bd/en', 'https://www.paperlords.org/', 'https://www.bbc.co.uk/bitesize'] },
-            { title: 'Support', links: ['Contact', 'FAQs', 'Download', 'Notice', 'BD Education Board Results'], hrefs: ['/contact', '/faqs', '/download', '/notice', 'https://eboardresults.com/v2/home'] }
+            { title: 'Support', links: ['Home', 'Contact', 'FAQs', 'Download', 'Notice', 'BD Education Board Results'], hrefs: ['/', '/contact', '/faqs', '/download', '/notice', 'https://eboardresults.com/v2/home'] }
           ].map((col, idx) => (
             <div key={idx} className="lg:mx-auto text-left">
               <h4 className="text-lg text-violet-600 font-medium mb-7 underline  hover:text-green-500">{col.title}</h4>
