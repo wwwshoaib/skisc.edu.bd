@@ -1,86 +1,98 @@
 
-
+import { HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker } from 'react-icons/hi'
 
 const Footer = () => {
-    return (
-        <div className="bg-green-50 mt-5">
-            <div className="">
-                <footer className="footer footer-horizontal footer-center bg-gray-700 text-white p-10 mb-2">
-                    <aside>
+  return (
+    <footer className=" bg-gray-800 text-white">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-                        <p className="font-bold text-xl md:text-2xl font-dancing">
-                            Winter Cloth Donation
-                        </p>
-                        <p className="text-[12px] ">
-                            <strong>Shoaib Ahmed, Aspiring Web Developer</strong> <br></br>
-                            Sylhet - 3100, Bangladesh  <br />
-                            WhatsApp: +880 1554 734 402
-                        </p>
-                        <p className="text-[11px] ">Copyright © {new Date().getFullYear()} - All right reserved</p>
-                    </aside>
-                    <nav>
-                        <div className="grid grid-flow-col gap-4">
-                            <a href="https://x.com/">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    className="fill-current">
-                                    <path
-                                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-                                </svg>
-                            </a>
-                            <a href="https://www.youtube.com/@shoaibchemistryclassroom">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    className="fill-current">
-                                    <path
-                                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-                                </svg>
-                            </a>
-                            <a href="https://github.com/wwwshoaib">
-                                <svg
-                                    xmlns="https://www.facebook.com/"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    className="fill-current">
-                                    <path
-                                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-                                </svg>
-                            </a>
-                            {/* github */}
-                            <a href="https://github.com/wwwshoaib">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    className="fill-current"
-                                >
-                                    <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 
-    0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 
-    1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.305 3.492.997.108-.775.418-1.305.762-1.605-2.665-.305-5.467-1.335-5.467-5.93 
-    0-1.31.468-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 3-.405 
-    c1.02.005 2.045.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 
-    1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.435.375.825 1.096.825 2.21 
-    0 1.595-.015 2.875-.015 3.27 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12 
-    24 5.373 18.627 0 12 0z" />
-                                </svg>
-                            </a>
 
-                        </div>
-                    </nav>
-                </footer>
 
+
+
+        {/* Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-8 py-10 max-w-xs mx-auto sm:max-w-2xl lg:max-w-full">
+
+          {/* Brand & Contact */}
+          <div className="col-span-full lg:mb-10 max-lg:border-b max-lg:pb-8 lg:border-r border-gray-200 lg:col-span-2 lg:max-w-xs lg:mb-0">
+
+            <ul className="grid gap-5">
+              <h4 className='text-lg text-violet-600 font-medium mb-7 underline  hover:text-green-500'>Contact Information</h4>
+              <li className="flex items-center justify-center gap-2 lg:justify-start">
+                <HiOutlineMail className="w-5 h-5 text-green-500" />
+                <a href="#" className=" hover:text-green-500">
+                  <strong>Email:</strong> skiscedu@live.com
+                </a>
+              </li>
+              <li className="flex items-center justify-center gap-2 lg:justify-start">
+                <HiOutlinePhone className="w-5 h-5 text-green-500" />
+                <a href="tel:+919456583256" className=" hover:text-green-500">
+                  <strong>Phone:</strong> +880 1309 101086
+                </a>
+              </li>
+              <li className="flex items-center justify-center gap-2 lg:justify-start">
+                <HiOutlineLocationMarker className="w-5 h-5 text-green-500  hover:text-green-500" />
+                <span className=' hover:text-green-500'>Nayasarak, Sylhet - 3100, Bangladesh</span>
+              </li>
+            </ul>
+            {/* google map of SKISC */}
+            <div className="w-[300px] h-[200px] m-5  mx-auto border-4 border-gray-300 rounded-2xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8607.588551656421!2d91.86989808819251!3d24.896440538568132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d443afe737%3A0x1ddde589db02baa4!2sThe%20Sylhet%20Khajanchibari%20International%20School%20and%20college!5e0!3m2!1sen!2sbd!4v1753502307540!5m2!1sen!2sbd"
+                width="100%"
+                height="300"
+                className="w-full h-[300px]"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
 
-        </div>
-    );
-};
+          </div>
 
-export default Footer;
+          {/* Menu columns */}
+          {[
+            { title: 'Quick Links', links: ['Dhaka Education Board', 'Sylhet Education Board', 'DSHE (মাউশি)', 'EMIS', 'Ministry of Education', 'Ministry of Primary and Mass Education'], hrefs: ['https://www.dhakaeducationboard.gov.bd/site/', 'https://sylhetboard.gov.bd/', 'https://dshe.gov.bd/', 'https://www.emis.gov.bd/emis', 'https://moedu.portal.gov.bd/', 'https://mopme.gov.bd/'] },
+            { title: 'Quick Links', links: ['জাতীয় তথ্য বাতায়ন', ' শিক্ষক বাতায়ন', 'মুক্তপাঠ', 'Directorate of Primary Education (DPE)', 'BANBEIS', 'NCTB'], hrefs: ['https://bangladesh.gov.bd/', 'https://www.teachers.gov.bd/', 'https://muktopaath.gov.bd/', 'https://www.dpe.gov.bd/', 'https://banbeis.gov.bd/', 'https://nctb.gov.bd/'] },
+            { title: 'Quick Links', links: ['Pearson Edexcel', 'Pearson Edexcel Exam Timetables', 'British Council Bangladesh', 'Paper Lords', 'BITESIZE'], hrefs: ['https://qualifications.pearson.com/en/home.html', 'https://qualifications.pearson.com/en/support/support-topics/exams/exam-timetables.html', 'https://www.britishcouncil.org.bd/en', 'https://www.paperlords.org/', 'https://www.bbc.co.uk/bitesize'] },
+            { title: 'Support', links: ['Contact', 'FAQs', 'Download', 'Notice', 'BD Education Board Results'], hrefs: ['/contact', '/faqs', '/download', '/notice', 'https://eboardresults.com/v2/home'] }
+          ].map((col, idx) => (
+            <div key={idx} className="lg:mx-auto text-left">
+              <h4 className="text-lg text-violet-600 font-medium mb-7 underline  hover:text-green-500">{col.title}</h4>
+              <ul className="text-sm transition-all duration-500">
+                {col.links.map((link, i) => (
+                  <li key={i} className={i < col.links.length - 1 ? 'mb-6' : ''}>
+                    <a href={col.hrefs[i]} className="hover:text-green-500">
+                      {link}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom strip */}
+        <div className="py-7 border-t border-gray-200">
+          <div className="flex items-center justify-center">
+            <span className="text-sm">
+              Design & Developed by: <br /> <a href="https://www.linkedin.com/in/shoaibahmed1971/" className="font-bold  hover:text-green-500 text-violet-600">Md. Shoaib Ahmed,</a>&nbsp; Chemistry Teacher, SKISC
+            </span>
+
+          </div>
+        </div>
+        {/* Design credit */}
+        <div className="py-6 text-center text-sm font-medium text-gray-100">
+
+        </div>
+      </div>
+
+
+
+
+    </footer>
+  )
+}
+
+export default Footer
